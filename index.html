@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AN Weather App</title>
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Work+Sans:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+        <form class="search-form" id="search-form">
+            <div class="row">
+                <div class="col-9">
+                    <input
+                        type="search"
+                        placeholder="Type a city.."
+                        autofocus="on"
+                        autocomplete="off"
+                        id="city-input"
+                        class="form-control shadow-sm"
+                    />
+                </div>
+                <div class="col-3" id="search-button">
+                    <input
+                        type="submit"
+                        value="Search"
+                        class="form-control btn btn-primary shadow-sm"
+                    />
+                </div>
+            </div>
+        </form>
+        <h1>
+        <span class = "temperature"
+        id = "current-temp"> 
+        78°F </span>
+    </h1>
+      <h2 id = "city">
+        New York City
+      </h2>
+      <h3>
+       <div class="date" id = "dateTime" > Sunday 10AM </div>
+       <div class= "description" id = "current-description" > Hot & Cloudy </div>
+      </h3>
+      </div>
+      <div class="row">
+        <div class="col">Sunday</div>
+        <div class="col">Monday</div>
+        <div class="col">Tuesday</div>
+        <div class="col">Wednesday</div>
+        <div class="col">Thursday</div>
+        <div class="col">Friday</div>
+        <div class="col">Saturday</div>
+      </div>
+      <div class="icons">
+        <div class="row">
+          <div class="col">🌤</div>
+          <div class="col">🌤</div>
+          <div class="col">🌤</div>
+          <div class="col">🌤</div>
+          <div class="col">🌤</div>
+          <div class="col">🌤</div>
+          <div class="col">🌤</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="src/index.js"></script>
+</html>
